@@ -1,21 +1,75 @@
-* {
-  border: 1px solid red;
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+/*"Segoe UI", "Source Sans Pro", Calibri, Candara, Arial, sans-serif*/
+
+:root {
+  --green: #3fb618; /* usage: color: var(--green); */
+  --red: #ff0039
+  --orange: #ff7518
+  --purple: #9954bb
+  --blue: #2780e3
+  --coal: #222222
 }
 
-html {
+* {
+  /*border: 1px solid red;*/
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
   margin: 0;
-  padding: 0 0.5em;
-  font-family: sans-serif;
-  font-weight: 200;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 100;
 }
 
 nav {
-  /*position: relative;*/
+  margin: 0;
+  padding: 0.5em 0.2em;
+  word-spacing: 4px;
+  background-color: var(--green);
+}
+
+nav a {
+  color: white;
+}
+
+#logo {
+  padding: 0.5em;
+  font-weight: bold;
 }
 a {
   text-decoration: none;
 }
 
 #login {
+  padding-right: 0.2em;
   float: right;
+}
+
+footer {
+  margin-bottom: 0;
+  background-color: var(--green);
+  text-align: center;
+}
+
+footer a {
+    color: white;
+}
+
+.main {
+  padding: 1em;
+  /*background: orange;*/
+  min-height: 100%;
+  margin-bottom: -30px;
+}
+
+.main:after {
+  /*content: "";*/
+  /*display: block;*/
+}
+
+footer, .main:after {
+  height: 30px;
 }
